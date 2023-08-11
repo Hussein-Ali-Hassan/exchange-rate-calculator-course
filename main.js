@@ -27,6 +27,8 @@ function calculateRate() {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
+
+      // grab the exchange rate and update the UI
     });
 
   console.log({
@@ -36,20 +38,5 @@ function calculateRate() {
   });
 }
 
-// methods for calling an API
-// 1. GET; for fetching data
-// 2. POST: for creating data
-// 3. PUT/PATCH: for updating data
-// 4. DELETE: for deleting data
 
-// json -> JAVA SCRIPT OBJECT NOTATION
-
-// normal function
-// function add(a, b) {
-//   return a + b;
-// }
-
-// arrow function
-// const add = (a, b) => {
-//   return a + b;
-// };
+// swap the currency
