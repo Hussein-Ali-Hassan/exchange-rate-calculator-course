@@ -14,25 +14,25 @@ const person = {
 
 //! conditions
 if (age > 18) {
-  console.log("You are an adult");
+  // console.log("You are an adult");
 } else if (age > 12) {
-  console.log("You are a teenager");
+  // console.log("You are a teenager");
 } else {
-  console.log("You are a child");
+  // console.log("You are a child");
 }
 
 const isAdult = age > 18 ? true : false; // Ternary operator
 
 //! loops
 for (let i = 0; i < 5; i++) {
-  console.log(i); // Outputs 0, 1, 2, 3, 4
+  // console.log(i); // Outputs 0, 1, 2, 3, 4
 }
 
 // looping over arrays: for...of loop
 const numbers = [1, 2, 3, 4, 5];
 
 for (const number of numbers) {
-  console.log(number); // Outputs 1, 2, 3, 4, 5
+  // console.log(number); // Outputs 1, 2, 3, 4, 5
 }
 
 //! functions
@@ -63,22 +63,22 @@ const square = (num) => num * num;
 
 // json -> JAVA SCRIPT OBJECT NOTATION
 
-// Using callbacks
-fetch("https://api.example.com/data")
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.error(error));
+// Using callbacks - caused callback hell
+// fetch("https://api.example.com/data")
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+//   .catch((error) => console.error(error));
 
 // Using Async/Await
-async function fetchData() {
-  try {
-    const response = await fetch("https://api.example.com/data");
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-  }
-}
+// async function fetchData() {
+//   try {
+//     const response = await fetch("https://api.example.com/data");
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
 
 //! DOM
 // Document Object Model
@@ -94,6 +94,6 @@ const rateEl = document.querySelectorAll(".btn");
 const button = document.querySelector("#button");
 
 // we passed the function as a callback to the addEventListener method using one-line arrow function syntax
-button.addEventListener("click", () => console.log("Button clicked"));
+// button.addEventListener("click", () => console.log("Button clicked"));
 
 // TODO: Later we'll dive into higher-order functions
